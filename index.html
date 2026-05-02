@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form | Artisan Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated background elements -->
+    <div class="background">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+    
+    <div class="form-container">
+        <form class="glass-form">
+            <div class="form-header">
+                <h2>Create Account</h2>
+                <p>Enter your details to get started</p>
+            </div>
+
+            <!-- Personal Data Section -->
+            <fieldset class="form-section">
+                <legend><i class="fa-solid fa-user-circle"></i> Personal Data</legend>
+                
+                <div class="input-group-row">
+                    <div class="input-box">
+                        <input type="text" name="FirstName" id="FtName" placeholder=" " required>
+                        <label for="FtName">First Name</label>
+                        <i class="fa-solid fa-user input-icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="SecondName" id="SName" placeholder=" " required>
+                        <label for="SName">Second Name</label>
+                        <i class="fa-solid fa-user input-icon"></i>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <input type="tel" name="UserPhone" id="UPhone" placeholder=" " required>
+                    <label for="UPhone">Phone Number</label>
+                    <i class="fa-solid fa-phone input-icon"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="email" name="UserEmail" id="UEmail" placeholder=" " required>
+                    <label for="UEmail">Email Address</label>
+                    <i class="fa-solid fa-envelope input-icon"></i>
+                </div>
+
+                <div class="input-group-row">
+                    <div class="input-box">
+                        <input type="password" name="UserPassword" id="UPassword" placeholder=" " required>
+                        <label for="UPassword">Password</label>
+                        <i class="fa-solid fa-lock input-icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" id="UserRePassword" placeholder=" " required>
+                        <label for="UserRePassword">Confirm Password</label>
+                        <i class="fa-solid fa-lock input-icon"></i>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Additional Information Section -->
+            <fieldset class="form-section">
+                <legend><i class="fa-solid fa-sliders"></i> Additional Info</legend>
+
+                <div class="options-row">
+                    <!-- Gender Radio Buttons -->
+                    <div class="radio-group">
+                        <span class="group-title">Gender</span>
+                        <div class="options-container">
+                            <label class="custom-radio">
+                                <input type="radio" name="UserGender" id="Usermgender" value="male" required>
+                                <span class="checkmark"></span>
+                                Male
+                            </label>
+                            <label class="custom-radio">
+                                <input type="radio" name="UserGender" id="Userfgender" value="female" required>
+                                <span class="checkmark"></span>
+                                Female
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Status Checkboxes -->
+                    <div class="checkbox-group">
+                        <span class="group-title">Status</span>
+                        <div class="options-container">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="Student OR Graduated" id="Student" value="Student">
+                                <span class="checkmark"></span>
+                                Student
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="Student OR Graduated" id="Graduated" value="Graduated">
+                                <span class="checkmark"></span>
+                                Graduated
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Select Box -->
+                <div class="select-box">
+                    <label for="universitySelect" class="group-title">University / Group</label>
+                    <div class="select-wrapper">
+                        <select name="select" id="universitySelect">
+                            <optgroup label="Group 1">
+                                <option value="" selected hidden>Select your option (e.g., AUC)</option>
+                                <option value="Option 1.1">Option 1.1</option>
+                            </optgroup>
+                            <optgroup label="Group 2">
+                                <option value="Option 2.1">Option 2.1</option>
+                                <option value="Option 2.2">Option 2.2</option>
+                            </optgroup>
+                            <optgroup label="Group 3">
+                                <option value="Option 3.1">Option 3.1</option>
+                                <option value="Option 3.2">Option 3.2</option>
+                                <option value="Option 3.3">Option 3.3</option>
+                            </optgroup>
+                        </select>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">
+                <span>Submit Form</span>
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            </button>
+        </form>
+    </div>
+</body>
+</html>
